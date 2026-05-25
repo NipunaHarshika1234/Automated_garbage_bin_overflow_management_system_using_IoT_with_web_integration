@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer theme, base, components, utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-slate-100 font-sans tracking-wide;
+  }
+}
+
+/* Custom Webflow/Modern Animations */
+.glass-effect {
+  @apply bg-slate-800/60 backdrop-blur-md border border-slate-700/50 shadow-xl;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-emerald-600;
+}
+
+.hover-glow {
+  transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(52, 211, 153, 0.4);
+  transform: translateY(-2px);
+}
